@@ -1,6 +1,4 @@
-# User identification based on keystroke dynamics
-
-These materials were meant for the workshop at the "PL in ML 2017" conference.
+# User identification based on keystroke dynamics (workshop)
 
 You can either create an Anaconda Environment on your local machine:
 ```
