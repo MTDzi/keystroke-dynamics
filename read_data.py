@@ -80,7 +80,7 @@ def produce_whole_DF(path, datasets=['A'], presentation=True):
     for dataset in datasets:
         dirnames = sorted(glob.glob(os.path.join(path, 'Dataset' + dataset, '*')))
         for dirname in dirnames:
-            user_name = dirname.split('/')[-1]
+            user_name = os.path.split(dirname)[-1]
             user_data = UserData(user_name, dataset)
             user_filenames = glob.glob(os.path.join(dirname, '*'))
             for filename in user_filenames:
